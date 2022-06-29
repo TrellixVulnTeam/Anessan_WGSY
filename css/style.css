@@ -1,0 +1,101 @@
+@keyframes fadingOut {
+  0% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #faa; }
+
+.start_logo_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  height: 100vh; }
+  .start_logo_box--video {
+    height: 65rem; }
+  .start_logo_box--bg {
+    position: absolute;
+    background-color: #fff;
+    width: 500vh;
+    height: 200vh;
+    z-index: -1;
+    opacity: 0;
+    animation: fadingOut 1s ease-in .5s;
+    animation-fill-mode: backwards; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  z-index: 2000;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer; }
+
+.navigation--icon > * {
+  position: absolute;
+  transition: all .15s;
+  height: 15rem; }
+
+.navigation--icon {
+  position: absolute; }
+
+.navigation__button:hover .item-main {
+  transform: scale(1.08); }
+
+.navigation__button:hover .item-1 {
+  transform: translateY(-2rem);
+  transform: translateX(0.4rem); }
+
+.navigation__button:hover .item-2 {
+  transform: translateY(0.6rem); }
+
+.navigation__button:hover .item-3 {
+  transform: translateY(0.6rem);
+  transform: translateX(-0.4rem); }
+
+.navigation__button:hover .item-4 {
+  transform: translateY(0.6rem);
+  transform: translateX(-0.3rem); }
+
+.navigation__button:hover .item-5 {
+  transform: translateY(0.6rem);
+  transform: translateX(0.3rem); }
+
+.navigation__button:hover .item-6 {
+  transform: translateY(-0.6rem); }
+
+.navigation__button:hover .item-7 {
+  transform: translateY(-0.7rem);
+  transform: translateX(0.3rem); }
+
+.navigation__button:hover .item-8 {
+  transform: translateY(-0.1rem);
+  transform: translateX(0.5rem); }
+
+.navigation__button:hover .item-9 {
+  transform: translateY(-0.1rem);
+  transform: translateX(-0.5rem); }
+
+.navigation__button:hover .item-10 {
+  transform: translateY(-0.7rem);
+  transform: translateX(-0.3rem); }

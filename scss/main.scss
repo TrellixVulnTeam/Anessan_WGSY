@@ -7,7 +7,10 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/start_logo";
+
 @import "layout/footer";
 @import "layout/header";
+@import "layout/navigation";
 
 @import "pages/home";

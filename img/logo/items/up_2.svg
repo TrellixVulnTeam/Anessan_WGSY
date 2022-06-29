@@ -1,0 +1,40 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 1000 1000">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="-51.9" y1="66.5875" x2="-51.9" y2="-18.087500000000006" spreadMethod="pad">
+<stop  offset="0%" stop-color="#66FFBF"/>
+
+<stop  offset="100%" stop-color="#8BF5E6"/>
+</linearGradient>
+
+<g id="Mask_2_12_1_MASK_0_FILL">
+<path fill="#FFFFFF" stroke="none" d="
+M 161.15 -58.8
+L 38.1 -58.8 -50.6 157.25 72.45 157.25 161.15 -58.8 Z"/>
+</g>
+
+<g id="FL_2_12_Layer1_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 124.05 18.25
+Q 131 8.45 121.7 5.45 70.6 -8.8 9.05 14.2 -7 66.75 5.35 143.15 5.35 150.2 10.95 150.85
+L 53.8 150.85
+Q 62.6 151.2 63.65 145.4 85.1 71.1 124.05 18.25 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( -0.8218231201171875, -0.569732666015625, -0.569732666015625, 0.8218231201171875, 1607.05,616.7) ">
+<g transform="matrix( 1.0216522216796875, 0, -0.0036773681640625, 0.9964599609375, 906.5,153.25) ">
+<mask id="Mask_Mask_1">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Mask_2_12_1_MASK_0_FILL"/>
+</g>
+</mask>
+
+<g mask="url(#Mask_Mask_1)">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#FL_2_12_Layer1_0_FILL"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
