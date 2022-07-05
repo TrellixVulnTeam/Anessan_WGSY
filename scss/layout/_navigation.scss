@@ -4,29 +4,35 @@
     }
 
     &__button {
-        height: 7rem;
-        width: 7rem;
+        height: 9rem;
+        width: 9rem;
+        border-radius: 50%;
         display: block;
         position: relative;
         margin: 0 auto;
-        z-index: 2000;
         background-color: #fff;
         text-align: center;
         cursor: pointer;
+        transition: all .15s ease-out;
     }
 
     //ICON
     &--icon > * {
         position: absolute;
-        transition: all .15s;
-        height: 15rem;
+        transition: all .15s ease-out;
+        height: 9rem;
     }
     
     &--icon {
         position: absolute;
+        top: -.1rem;
     }
 
     //ANIMATIONS
+
+    &__button:hover {
+        transform: scale(1.08);
+    }
 
     &__button:hover .item-main {
         transform: scale(1.08);

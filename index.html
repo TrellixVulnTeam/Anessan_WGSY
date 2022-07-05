@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="start_logo_box">
-        <div class="flex-grid">
-            <video class="start_logo_box--video" autoplay muted>
-                <source src="img/logo/AneLogo_video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
 
-        <div class="start_logo_box--bg"></div>
+    <div id="preloader_malc">
+        <video class="preloader_container" autoplay muted>
+            <source src="img/logo/AneLogo_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
+    <script type="text/javascript">
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("preloader_malc").style.display = "none";
+            }, 3000);
+        };
+    </script>
+
+<body>
     <header class="header">
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -40,6 +45,10 @@
                     <img class="item-10" src="img/logo/items/up_5.svg" alt="">
                 </div>
             </label>
+        </div>
+
+        <div id="logo_box">
+            <img src="img/logo/logo_ani.png" alt="" class="logo_box-img">
         </div>
     </header>
 </body>

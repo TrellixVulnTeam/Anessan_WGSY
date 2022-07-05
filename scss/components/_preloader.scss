@@ -1,0 +1,26 @@
+#preloader_malc {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color-white, 0.0);
+    z-index: 99;
+    animation-name: fadingBgWhiteOut;
+    animation-duration: 2s;
+}
+
+#preloader_malc div {
+    position: fixed;
+    z-index: 999;
+}
+
+.preloader_container {
+    height: 50vh;
+    opacity: 0;
+    animation-name: fadingOut;
+    animation-duration: 1.87s;
+}
