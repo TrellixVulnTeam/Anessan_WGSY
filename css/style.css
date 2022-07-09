@@ -37,9 +37,6 @@
 html {
   font-size: 62.5%; }
 
-body {
-  background-color: #faa; }
-
 #preloader_malc {
   position: fixed;
   display: flex;
@@ -85,6 +82,12 @@ body {
   animation: navOut 1s ease-in 2s;
   animation-fill-mode: backwards;
   opacity: 0; }
+
+.header {
+  background: url("../../img/shapka.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 75vh; }
 
 .navigation__checkbox {
   display: none; }
@@ -153,3 +156,7 @@ body {
 .navigation__button:hover .item-10 {
   transform: translateY(-0.7rem);
   transform: translateX(-0.3rem); }
+
+.section-promo {
+  height: 110rem;
+  background-color: #faaa; }
