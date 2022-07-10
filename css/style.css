@@ -47,13 +47,13 @@ html {
   right: 0;
   bottom: 0;
   background: rgba(255, 255, 255, 0);
-  z-index: 99;
+  z-index: 2000;
   animation-name: fadingBgWhiteOut;
   animation-duration: 2s; }
 
 #preloader_malc div {
   position: fixed;
-  z-index: 999; }
+  z-index: 2000; }
 
 .preloader_container {
   height: 50vh;
@@ -61,30 +61,8 @@ html {
   animation-name: fadingOut;
   animation-duration: 1.87s; }
 
-#logo_box {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1000; }
-
-#logo_box div {
-  position: fixed;
-  z-index: -1000; }
-
-.logo_box-img {
-  height: 46vh;
-  transform: scale(0.26) translateY(-150rem);
-  animation: navOut 1s ease-in 2s;
-  animation-fill-mode: backwards;
-  opacity: 0; }
-
 .header {
-  background: url("../../img/shapka.jpg");
+  background: url("../img/shapka.jpg");
   background-size: cover;
   background-position: top;
   height: 75vh; }
@@ -93,16 +71,34 @@ html {
   display: none; }
 
 .navigation__button {
+  top: 2rem;
+  left: 47%;
   height: 9rem;
   width: 9rem;
   border-radius: 50%;
-  display: block;
-  position: relative;
-  margin: 0 auto;
+  position: fixed;
   background-color: #fff;
   text-align: center;
   cursor: pointer;
-  transition: all .15s ease-out; }
+  transition: all .15s ease-out;
+  z-index: 1000; }
+
+.navigation__button_active {
+  top: 2rem;
+  left: 47%;
+  height: 9rem;
+  width: 9rem;
+  -webkit-border-bottom-right-radius: 1000px;
+  -webkit-border-bottom-left-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+  position: fixed;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all .15s ease-out;
+  z-index: 1000;
+  transform: translateY(-2.4rem); }
 
 .navigation--icon > * {
   position: absolute;
@@ -154,6 +150,50 @@ html {
   transform: translateX(-0.5rem); }
 
 .navigation__button:hover .item-10 {
+  transform: translateY(-0.7rem);
+  transform: translateX(-0.3rem); }
+
+.navigation__button_active:hover {
+  transform: translateY(-1.7rem); }
+
+.navigation__button_active:hover .item-main {
+  transform: scale(1.08); }
+
+.navigation__button_active:hover .item-1 {
+  transform: translateY(-2rem);
+  transform: translateX(0.4rem); }
+
+.navigation__button_active:hover .item-2 {
+  transform: translateY(0.6rem); }
+
+.navigation__button_active:hover .item-3 {
+  transform: translateY(0.6rem);
+  transform: translateX(-0.4rem); }
+
+.navigation__button_active:hover .item-4 {
+  transform: translateY(0.6rem);
+  transform: translateX(-0.3rem); }
+
+.navigation__button_active:hover .item-5 {
+  transform: translateY(0.6rem);
+  transform: translateX(0.3rem); }
+
+.navigation__button_active:hover .item-6 {
+  transform: translateY(-0.6rem); }
+
+.navigation__button_active:hover .item-7 {
+  transform: translateY(-0.7rem);
+  transform: translateX(0.3rem); }
+
+.navigation__button_active:hover .item-8 {
+  transform: translateY(-0.1rem);
+  transform: translateX(0.5rem); }
+
+.navigation__button_active:hover .item-9 {
+  transform: translateY(-0.1rem);
+  transform: translateX(-0.5rem); }
+
+.navigation__button_active:hover .item-10 {
   transform: translateY(-0.7rem);
   transform: translateX(-0.3rem); }
 

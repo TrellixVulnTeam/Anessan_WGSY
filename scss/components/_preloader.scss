@@ -8,14 +8,14 @@
     right: 0;
     bottom: 0;
     background: rgba($color-white, 0.0);
-    z-index: 99;
+    z-index: 2000;
     animation-name: fadingBgWhiteOut;
     animation-duration: 2s;
 }
 
 #preloader_malc div {
     position: fixed;
-    z-index: 999;
+    z-index: 2000;
 }
 
 .preloader_container {

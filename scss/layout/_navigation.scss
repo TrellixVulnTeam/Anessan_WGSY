@@ -4,17 +4,37 @@
     }
 
     &__button {
+        top: 2rem;
+        left: 47%;
         height: 9rem;
         width: 9rem;
         border-radius: 50%;
-        display: block;
-        position: relative;
-        margin: 0 auto;
+        position: fixed;
         background-color: #fff;
         text-align: center;
         cursor: pointer;
         transition: all .15s ease-out;
+        z-index: 1000;
     }
+
+    &__button_active {
+        top: 2rem;
+        left: 47%;
+        height: 9rem;
+        width: 9rem;
+        -webkit-border-bottom-right-radius: 1000px;
+        -webkit-border-bottom-left-radius: 1000px;
+        border-bottom-right-radius: 1000px;
+        border-bottom-left-radius: 1000px;
+        position: fixed;
+        background-color: #fff;
+        text-align: center;
+        cursor: pointer;
+        transition: all .15s ease-out;
+        z-index: 1000;
+        transform: translateY(-2.4rem);
+    }
+
 
     //ICON
     &--icon > * {
@@ -86,4 +106,62 @@
         transform: translateX(-.3rem);
     }
 
+
+    // ANIMATIONS ACTIVE
+    
+    &__button_active:hover {
+        transform: translateY(-1.7rem);
+    }
+
+    &__button_active:hover .item-main {
+        transform: scale(1.08);
+    }
+
+    &__button_active:hover .item-1 {
+        transform: translateY(-2rem);
+        transform: translateX(.4rem);
+    }
+
+    &__button_active:hover .item-2 {
+        transform: translateY(.6rem);
+    }
+
+    &__button_active:hover .item-3 {
+        transform: translateY(.6rem);
+        transform: translateX(-.4rem);
+    }
+
+    &__button_active:hover .item-4 {
+        transform: translateY(.6rem);
+        transform: translateX(-.3rem);
+    }
+
+    &__button_active:hover .item-5 {
+        transform: translateY(.6rem);
+        transform: translateX(.3rem);
+    }
+
+    &__button_active:hover .item-6 {
+        transform: translateY(-.6rem);
+    }
+
+    &__button_active:hover .item-7 {
+        transform: translateY(-.7rem);
+        transform: translateX(.3rem);
+    }
+
+    &__button_active:hover .item-8 {
+        transform: translateY(-.1rem);
+        transform: translateX(.5rem);
+    }
+
+    &__button_active:hover .item-9 {
+        transform: translateY(-.1rem);
+        transform: translateX(-.5rem);
+    }
+
+    &__button_active:hover .item-10 {
+        transform: translateY(-.7rem);
+        transform: translateX(-.3rem);
+    }
 }
