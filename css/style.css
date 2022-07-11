@@ -37,6 +37,15 @@
 html {
   font-size: 62.5%; }
 
+.paragraph {
+  padding-top: 15rem;
+  font-size: 13rem; }
+
+.paragraph_active {
+  padding-top: 15rem;
+  font-size: 13rem;
+  color: #aaa; }
+
 #preloader_malc {
   position: fixed;
   display: flex;
