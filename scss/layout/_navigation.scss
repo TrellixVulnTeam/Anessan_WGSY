@@ -17,7 +17,7 @@
         z-index: 1000;
     }
 
-    &__button_active {
+    ._active {
         top: 2rem;
         left: 47%;
         height: 9rem;
@@ -109,58 +109,58 @@
 
     // ANIMATIONS ACTIVE
     
-    &__button_active:hover {
-        transform: translateY(-1.7rem);
+    ._active:hover {
+        transform: translateY(-2rem);
     }
 
-    &__button_active:hover .item-main {
+    ._active:hover .item-main {
         transform: scale(1.08);
     }
 
-    &__button_active:hover .item-1 {
+    ._active:hover .item-1 {
         transform: translateY(-2rem);
         transform: translateX(.4rem);
     }
 
-    &__button_active:hover .item-2 {
+    ._active:hover .item-2 {
         transform: translateY(.6rem);
     }
 
-    &__button_active:hover .item-3 {
+    ._active:hover .item-3 {
         transform: translateY(.6rem);
         transform: translateX(-.4rem);
     }
 
-    &__button_active:hover .item-4 {
+    ._active:hover .item-4 {
         transform: translateY(.6rem);
         transform: translateX(-.3rem);
     }
 
-    &__button_active:hover .item-5 {
+    ._active:hover .item-5 {
         transform: translateY(.6rem);
         transform: translateX(.3rem);
     }
 
-    &__button_active:hover .item-6 {
+    ._active:hover .item-6 {
         transform: translateY(-.6rem);
     }
 
-    &__button_active:hover .item-7 {
+    ._active:hover .item-7 {
         transform: translateY(-.7rem);
         transform: translateX(.3rem);
     }
 
-    &__button_active:hover .item-8 {
+    ._active:hover .item-8 {
         transform: translateY(-.1rem);
         transform: translateX(.5rem);
     }
 
-    &__button_active:hover .item-9 {
+    ._active:hover .item-9 {
         transform: translateY(-.1rem);
         transform: translateX(-.5rem);
     }
 
-    &__button_active:hover .item-10 {
+    ._active:hover .item-10 {
         transform: translateY(-.7rem);
         transform: translateX(-.3rem);
     }

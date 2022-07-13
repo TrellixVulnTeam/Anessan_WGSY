@@ -92,7 +92,7 @@ html {
   transition: all .15s ease-out;
   z-index: 1000; }
 
-.navigation__button_active {
+.navigation ._active {
   top: 2rem;
   left: 47%;
   height: 9rem;
@@ -162,47 +162,47 @@ html {
   transform: translateY(-0.7rem);
   transform: translateX(-0.3rem); }
 
-.navigation__button_active:hover {
-  transform: translateY(-1.7rem); }
+.navigation ._active:hover {
+  transform: translateY(-2rem); }
 
-.navigation__button_active:hover .item-main {
+.navigation ._active:hover .item-main {
   transform: scale(1.08); }
 
-.navigation__button_active:hover .item-1 {
+.navigation ._active:hover .item-1 {
   transform: translateY(-2rem);
   transform: translateX(0.4rem); }
 
-.navigation__button_active:hover .item-2 {
+.navigation ._active:hover .item-2 {
   transform: translateY(0.6rem); }
 
-.navigation__button_active:hover .item-3 {
+.navigation ._active:hover .item-3 {
   transform: translateY(0.6rem);
   transform: translateX(-0.4rem); }
 
-.navigation__button_active:hover .item-4 {
+.navigation ._active:hover .item-4 {
   transform: translateY(0.6rem);
   transform: translateX(-0.3rem); }
 
-.navigation__button_active:hover .item-5 {
+.navigation ._active:hover .item-5 {
   transform: translateY(0.6rem);
   transform: translateX(0.3rem); }
 
-.navigation__button_active:hover .item-6 {
+.navigation ._active:hover .item-6 {
   transform: translateY(-0.6rem); }
 
-.navigation__button_active:hover .item-7 {
+.navigation ._active:hover .item-7 {
   transform: translateY(-0.7rem);
   transform: translateX(0.3rem); }
 
-.navigation__button_active:hover .item-8 {
+.navigation ._active:hover .item-8 {
   transform: translateY(-0.1rem);
   transform: translateX(0.5rem); }
 
-.navigation__button_active:hover .item-9 {
+.navigation ._active:hover .item-9 {
   transform: translateY(-0.1rem);
   transform: translateX(-0.5rem); }
 
-.navigation__button_active:hover .item-10 {
+.navigation ._active:hover .item-10 {
   transform: translateY(-0.7rem);
   transform: translateX(-0.3rem); }
 
