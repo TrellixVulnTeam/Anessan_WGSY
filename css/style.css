@@ -27,6 +27,23 @@
     transform: scale(0.26) translateY(-150rem);
     opacity: 0; } }
 
+@keyframes NavButton {
+  0% {
+    transform: translateY(0rem);
+    border-radius: 50%; }
+  60% {
+    transform: translateY(-2.8rem);
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px; }
+  100% {
+    transform: translateY(-2.4rem);
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px; } }
+
 *,
 *::after,
 *::before {
@@ -107,7 +124,9 @@ html {
   cursor: pointer;
   transition: all .15s ease-out;
   z-index: 1000;
-  transform: translateY(-2.4rem); }
+  transform: translateY(-2.4rem);
+  animation-name: NavButton;
+  animation-duration: .4s; }
 
 .navigation--icon > * {
   position: absolute;

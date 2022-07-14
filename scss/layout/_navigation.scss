@@ -33,6 +33,8 @@
         transition: all .15s ease-out;
         z-index: 1000;
         transform: translateY(-2.4rem);
+        animation-name: NavButton;
+        animation-duration: .4s;
     }
 
 
