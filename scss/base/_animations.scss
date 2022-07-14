@@ -46,26 +46,3 @@
         opacity: 0;
     }
 }
-
-@keyframes NavButton {
-    0% {
-        transform: translateY(0rem);
-        border-radius: 50%;
-    }
-
-    60% {
-        transform: translateY(-2.8rem);
-        -webkit-border-bottom-right-radius: 1000px;
-        -webkit-border-bottom-left-radius: 1000px;
-        border-bottom-right-radius: 1000px;
-        border-bottom-left-radius: 1000px;
-    }
-
-    100% {
-        transform: translateY(-2.4rem);
-        -webkit-border-bottom-right-radius: 1000px;
-        -webkit-border-bottom-left-radius: 1000px;
-        border-bottom-right-radius: 1000px;
-        border-bottom-left-radius: 1000px;
-    }
-}
