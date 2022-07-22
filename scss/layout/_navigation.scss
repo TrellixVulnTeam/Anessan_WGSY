@@ -15,6 +15,9 @@
         cursor: pointer;
         transition: all .15s ease-out;
         z-index: 1000;
+        animation-name: NavButtonScrollUp;
+        animation-duration: .2s;
+        box-shadow: rgba($color-black, .1) 0 .5rem .3rem;
     }
 
     ._active {
@@ -33,6 +36,48 @@
         transition: all .15s ease-out;
         z-index: 1000;
         transform: translateY(-2.4rem);
+        animation-name: NavButtonScrollDown;
+        animation-duration: .3s;
+
+        &::after {
+            content: "";
+            display: block;
+            left: -60%;
+            height: 1rem;
+            width: 10rem;
+
+            -webkit-border-bottom-right-radius: 1000px;
+            -webkit-border-bottom-left-radius: 1000px;
+            border-bottom-right-radius: 1000px;
+            border-bottom-left-radius: 1000px;
+
+            position: fixed;
+            background-color: $color-white;
+            cursor: pointer;
+            z-index: -1;
+            animation-name: NavAfterScrollDown;
+            animation-duration: .3s;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            left: 60%;
+            height: 1rem;
+            width: 10rem;
+
+            -webkit-border-bottom-right-radius: 1000px;
+            -webkit-border-bottom-left-radius: 1000px;
+            border-bottom-right-radius: 1000px;
+            border-bottom-left-radius: 1000px;
+
+            position: fixed;
+            background-color: $color-white;
+            cursor: pointer;
+            z-index: -1;
+            animation-name: NavAfterScrollDown;
+            animation-duration: .3s;
+        }
     }
 
 

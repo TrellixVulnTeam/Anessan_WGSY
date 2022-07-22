@@ -27,6 +27,46 @@
     transform: scale(0.26) translateY(-150rem);
     opacity: 0; } }
 
+@keyframes NavButtonScrollDown {
+  0% {
+    transform: translateY(0rem);
+    border-radius: 50%; }
+  60% {
+    transform: translateY(-2.8rem);
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px; }
+  100% {
+    transform: translateY(-2.4rem);
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px; } }
+
+@keyframes NavButtonScrollUp {
+  0% {
+    transform: translateY(-2.4rem);
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px; }
+  60% {
+    transform: translateY(-2rem);
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px; }
+  100% {
+    transform: translateY(0rem);
+    border-radius: 50%; } }
+
+@keyframes NavAfterScrollDown {
+  0% {
+    width: 0; }
+  100% {
+    width: 10rem; } }
+
 *,
 *::after,
 *::before {
@@ -90,7 +130,10 @@ html {
   text-align: center;
   cursor: pointer;
   transition: all .15s ease-out;
-  z-index: 1000; }
+  z-index: 1000;
+  animation-name: NavButtonScrollUp;
+  animation-duration: .2s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0.5rem 0.3rem; }
 
 .navigation ._active {
   top: 2rem;
@@ -107,7 +150,41 @@ html {
   cursor: pointer;
   transition: all .15s ease-out;
   z-index: 1000;
-  transform: translateY(-2.4rem); }
+  transform: translateY(-2.4rem);
+  animation-name: NavButtonScrollDown;
+  animation-duration: .3s; }
+  .navigation ._active::after {
+    content: "";
+    display: block;
+    left: -60%;
+    height: 1rem;
+    width: 10rem;
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    position: fixed;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: -1;
+    animation-name: NavAfterScrollDown;
+    animation-duration: .3s; }
+  .navigation ._active::before {
+    content: "";
+    display: block;
+    left: 60%;
+    height: 1rem;
+    width: 10rem;
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    position: fixed;
+    background-color: #fff;
+    cursor: pointer;
+    z-index: -1;
+    animation-name: NavAfterScrollDown;
+    animation-duration: .3s; }
 
 .navigation--icon > * {
   position: absolute;
